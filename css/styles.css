@@ -856,3 +856,90 @@ body {
         font-size: 0.95rem;
     }
 }
+/* ==========================================================================
+   11. DISEÑO RESPONSIVE GLOBAL (TABLETS Y MÓVILES)
+   ========================================================================== */
+
+/* 1. Ajuste para Pantallas Medianas y Tablets (<= 992px) */
+@media (max-width: 992px) {
+    /* Pasa Servicios de 3 columnas a 2 columnas */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem;
+    }
+
+    /* Pasa Destinos de 3 columnas a 2 columnas */
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem;
+    }
+}
+
+/* 2. Ajuste para Pantallas Pequeñas y Teléfonos (<= 768px) */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .hero-content h1,
+    .about-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-hero {
+        padding: 2.5rem 1rem;
+    }
+
+    /* Ajuste para la Banderola de Beneficios y Estadísticas */
+    .benefits-banner,
+    .stats-banner {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.8rem 1rem;
+    }
+
+    /* Formulario de Contacto a 1 sola columna */
+    .booking-form {
+        grid-template-columns: 1fr !important;
+    }
+
+    .form-group,
+    .form-group.full-width,
+    .btn-submit {
+        grid-column: span 1 !important;
+        width: 100%;
+    }
+}
+
+/* 3. Ajuste para Teléfonos Móviles Pequeños (<= 600px) */
+@media (max-width: 600px) {
+    /* Pasa Servicios a 1 sola columna */
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    /* Pasa Destinos a 1 sola columna */
+    .cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .service-card {
+        padding: 1.8rem 1.2rem 1.5rem; /* Ajusta el relleno interno para que no quede apretado */
+    }
+
+    .container {
+        width: 95%;
+        margin: 1rem auto;
+    }
+}
