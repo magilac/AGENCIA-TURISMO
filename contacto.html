@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quevedo Tours - Contacto y Reserva</title>
+    <!-- Estilos del proyecto -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="css/images/logo.jpg" alt="Logo de Quevedo Tours" class="logo-img">
+            <span class="brand-name">Quevedo Tours</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- 1. HERO BANNER DE CONTACTO -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <span class="badge"><i class="fa-solid fa-envelope"></i> Reserva Tu Aventura</span>
+                <h1>Reserva tu Tour o Contáctanos</h1>
+                <p class="lead-text">Estamos listos para ayudarte a planificar tu mejor experiencia en Quevedo. Completa el formulario y te responderemos a la brevedad.</p>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <!-- 2. FORMULARIO DE RESERVA / CONTACTO -->
+            <section class="form-section">
+                <div class="section-title">
+                    <h2>Formulario de Reserva</h2>
+                    <p>Ingresa tus datos para coordinar tu viaje a medida.</p>
+                </div>
+
+                <form action="#" method="post" class="booking-form">
+                    
+                    <!-- Campo: Nombre -->
+                    <div class="form-group">
+                        <label for="nombre"><i class="fa-solid fa-user"></i> Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Carlos Mendoza">
+                    </div>
+
+                    <!-- Campo: Correo -->
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <!-- Campo: Teléfono -->
+                    <div class="form-group">
+                        <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono de Contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 0991234567">
+                    </div>
+
+                    <!-- Campo: Destino o Atractivo (Ajustado a tus 6 destinos) -->
+                    <div class="form-group">
+                        <label for="destino"><i class="fa-solid fa-map-pin"></i> Destino de Interés:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="" disabled selected>Seleccione una opción...</option>
+                            <option value="malecon">Malecón de Quevedo</option>
+                            <option value="palacio">Palacio de Cristal</option>
+                            <option value="tenis-club">Quevedo Tenis Club</option>
+                            <option value="museo">Museo de Quevedo</option>
+                            <option value="san-camilo">Zona Gastronómica San Camilo</option>
+                            <option value="zoologico">Zoológico de Quevedo</option>
+                            <option value="todos">Todos los Atractivos (City Tour)</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo: Fecha -->
+                    <div class="form-group">
+                        <label for="fecha"><i class="fa-solid fa-calendar"></i> Fecha Tentativa:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <!-- Campo: Número de personas -->
+                    <div class="form-group">
+                        <label for="personas"><i class="fa-solid fa-users"></i> Número de Personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" max="50" required placeholder="1">
+                    </div>
+
+                    <!-- Campo: Tipo de Servicio (Ajustado a tus 6 servicios) -->
+                    <div class="form-group full-width">
+                        <label for="servicio"><i class="fa-solid fa-concierge-bell"></i> Paquete o Tipo de Servicio:</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="" disabled selected>Seleccione un servicio...</option>
+                            <option value="historica">Ruta Histórica y Patrimonial ($18.00/p)</option>
+                            <option value="gastronomica">Ruta Gastronómica San Camilo ($25.00/p)</option>
+                            <option value="zoologico">Aventura Ecológica en el Zoológico ($20.00/p)</option>
+                            <option value="nocturno">Paseo Nocturno por el Malecón ($15.00/p)</option>
+                            <option value="tenis">Day Pass Quevedo Tenis Club ($30.00/p)</option>
+                            <option value="city-tour">City Tour Quevedo Total ($75.00/p)</option>
+                            <option value="personalizado">Tour Privado / Personalizado</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo: Mensaje -->
+                    <div class="form-group full-width">
+                        <label for="mensaje"><i class="fa-solid fa-comment"></i> Mensaje o Consultas Adicionales:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tus inquietudes o requerimientos especiales (horarios, alergias alimentarias, transporte adicional)..."></textarea>
+                    </div>
+
+                    <!-- Botón Enviar -->
+                    <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Enviar Reserva</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Quevedo Tours - Agencia de Turismo.</p>
+    </footer>
+
+</body>
+</html>
