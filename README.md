@@ -24,5 +24,5 @@ Este sitio web promociona la oferta turística, cultural, agroturística y gastr
 
 ## Enlaces del Proyecto
 * **URL del Repositorio en GitHub:** https://github.com/mariaisabelagila/examen-turismo-quevedo
-* **URL del Sitio Publicado en GitHub Pages:** [https://mariaisabelagila.github.io/examen-turismo-quevedo/# Examen Práctico: Portal Web de Turismo Quevedo](https://magilac.github.io/AGENCIA-TURISMO/)
+* **URL del Sitio Publicado en GitHub Pages:** https://magilac.github.io/AGENCIA-TURISMO/
 
